@@ -10,6 +10,8 @@ public class ConnectionDB {
     private String tabla;
     private boolean validConnection = false;
 	
+    
+    //El constructor crea un objeto con todos los datos que necesitamos para conectar un una base de datos
     public ConnectionDB(String url, String dbName, String driver, String userName, String password) {
 		super();
 		this.url = url;

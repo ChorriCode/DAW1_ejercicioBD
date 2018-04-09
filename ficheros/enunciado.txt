@@ -8,7 +8,7 @@
 	
 		Deben incluir las clases y métodos necesarios para :
 	
-		Hacer sentencias DML : SELECT, INSERT, DELETE, y UPDATE.
+		Hacer sentencias DML : SELECT, INSERT, DELETE (con confirmacion), y UPDATE.
 	
 	ENTREGA DE LA PRÁCTICA:
 	

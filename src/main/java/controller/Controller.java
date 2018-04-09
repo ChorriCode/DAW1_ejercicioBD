@@ -16,7 +16,7 @@ public class Controller {
 		
 	}
 
-public void menu1(View myView) {
+public void controlMenuBBDD(View myView) {
 	String option = myView.getOption();
 	
 	switch (option) {
