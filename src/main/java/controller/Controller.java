@@ -29,7 +29,6 @@ public void controlMenuBBDD(View myView) {
 		//Cuando creé el objeto controller en Main no tenía aún creado el modelo y lo pasé null
 		//ahora que tengo los datos de la conexión, puedo añadir al objeto controller el objeto modelo que me faltaba
 		this.model = new Model(myConnection);
-		System.out.println("option: " + this.model);
 		this.model.setConnDB(myConnection);
 		model.connectToBD();
 		break;

@@ -24,8 +24,14 @@ public class View {
 		
 		do {
 			this.option = this.sc.nextLine();
-			optionInt = Integer.parseInt(option);
-			if (optionInt<1 || optionInt>4) System.out.println("Seleccione del 1 al 5");
+			try {
+				optionInt = Integer.parseInt(option);
+			} catch (Exception e) {
+				//En caso de que teclemos letras dará un error, asignamos el valor cero para que nos vuelva a preguntar
+				//por un numero entre 1 y 5
+				optionInt = 0;
+			}
+			if (optionInt<1 || optionInt>4) System.out.println("Seleccione del 1 al 4");
 		} while (optionInt<1 || optionInt>4);
 		
 	}
