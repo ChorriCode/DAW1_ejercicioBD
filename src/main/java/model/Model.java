@@ -18,7 +18,7 @@ public class Model {
 		this.connDB = connDB;
 	}
 
-	//Método que conecta con la base de datos seleccionada.
+	//MÃ©todo que conecta con la base de datos seleccionada.
 	public Connection connectToBD() {	
 		this.conn = null;
 		try {
@@ -47,15 +47,17 @@ public class Model {
 		
 	}
 	
-	public void readOnBD(Connection conn, String tabla) {
-		String sql = "";
+	public ResultSet readOnBD(Connection conn, String tabla) {
+		String sql = "select * from " + tabla;
+		ResultSet myResulSet = null ;
 		try {
 			Statement myStatement = conn.createStatement();
-			ResultSet myResulSet = myStatement.executeQuery(sql);
+			myResulSet = myStatement.executeQuery(sql);
 		} catch (SQLException e) {;
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return myResulSet;
 	}
 	
 	public void updateOnBD() {
@@ -73,6 +75,14 @@ public class Model {
 
 	public void setConnDB(ConnectionDB connDB) {
 		this.connDB = connDB;
+	}
+
+	public Connection getConn() {
+		return conn;
+	}
+
+	public void setConn(Connection conn) {
+		this.conn = conn;
 	}
 
 }

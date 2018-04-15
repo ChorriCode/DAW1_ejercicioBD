@@ -10,7 +10,8 @@ public class Main {
 		View myView = new View();
 		Controller myController = new Controller(null, myView);
 
-		//Menú eleccion tipo base de datos
+
+		//Menu eleccion tipo base de datos
 		myView.menuBBDD();
 		myController.controlMenuBBDD(myView);
 
