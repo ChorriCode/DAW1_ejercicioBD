@@ -55,7 +55,7 @@ public void controlMenuBBDD(View myView) {
 												"tiendainformatica",
 												"com.mysql.jdbc.Driver", 
 												"root", 
-												"");
+												"Gratis007");
 		//Cuando creo el objeto controller en Main no tenia aun creado el modelo y lo paso null
 		//ahora que tengo los datos de la conexion, puedo incluir al objeto controller el objeto modelo que me faltaba
 		this.model = new Model(myConnection);
